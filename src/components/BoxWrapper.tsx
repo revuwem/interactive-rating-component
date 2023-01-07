@@ -14,7 +14,9 @@ const BoxWrapper: React.FC<IBoxWrapper> = ({ children }) => {
         p-6
         pr-8
         rounded-2xl
-        bg-blue-200
+        bg-gradient-to-b
+        from-blue-300
+        to-blue-200
       `}
     >
       {children}
