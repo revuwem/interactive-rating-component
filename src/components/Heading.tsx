@@ -6,7 +6,7 @@ interface IHeadingProps {
 const classNameMap = {
   h1: "",
   h2: "",
-  h3: "font-sans text-2xl font-bold text-white",
+  h3: "font-sans text-2xl font-bold text-white mb-4",
   h4: "",
   h5: "",
   h6: "",
