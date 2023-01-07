@@ -23,6 +23,9 @@ module.exports = {
           200: "hsl(213, 19%, 18%)",
         },
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [],
