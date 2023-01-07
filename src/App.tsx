@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <>
+    <main>
       {!isRateSubmitted ? (
         <RatingForm
           ratingOptions={ratingOptions}
@@ -36,7 +36,7 @@ function App() {
           rateOf={ratingOptions.length.toString()}
         />
       )}
-    </>
+    </main>
   );
 }
 
