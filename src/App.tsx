@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <main>
+    <main className="bg-blue-100 min-h-screen">
       {!isRateSubmitted ? (
         <RatingForm
           ratingOptions={ratingOptions}
