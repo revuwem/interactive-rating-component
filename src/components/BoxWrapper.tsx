@@ -11,7 +11,8 @@ const BoxWrapper: React.FC<IBoxWrapper> = ({ children }) => {
         items-center
         justify-center
         max-w-sm
-        p-7
+        py-8
+        pl-7
         pr-8
         rounded-2xl
         bg-gradient-to-b
