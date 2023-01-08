@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <main className="bg-blue-100 min-h-screen grid place-items-center">
+    <main className="bg-blue-100 min-h-screen grid place-items-center p-5">
       {!isRateSubmitted ? (
         <RatingForm
           ratingOptions={ratingOptions}
