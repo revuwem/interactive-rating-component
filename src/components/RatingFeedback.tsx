@@ -10,17 +10,19 @@ interface IRatingFeedbackProps {
 
 const RatingFeedback: React.FC<IRatingFeedbackProps> = ({ rate, rateOf }) => {
   return (
-    <BoxWrapper>
-      <img src="images/illustration-thank-you.svg" alt="" />
-      <Badge>
-        You selected {rate} of {rateOf}
-      </Badge>
-      <Heading level="h3">Thank You!</Heading>
-      <Paragraph>
-        We appreciate you taking the time to give a rating. If you ever need
-        more support, don't hesitate to get in touch!
-      </Paragraph>
-    </BoxWrapper>
+    <div className="text-center">
+      <BoxWrapper>
+        <img src="images/illustration-thank-you.svg" alt="" className="mb-6" />
+        <Badge>
+          You selected {rate} of {rateOf}
+        </Badge>
+        <Heading level="h3">Thank You!</Heading>
+        <Paragraph>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </Paragraph>
+      </BoxWrapper>
+    </div>
   );
 };
 
