@@ -7,19 +7,12 @@ interface IRatingButtonProps
 
 const RatingButton: React.FC<IRatingButtonProps> = ({
   id,
-  key,
   label,
   ...props
 }) => {
   return (
     <div className="w-12 flex">
-      <input
-        type="radio"
-        id={id}
-        key={key}
-        {...props}
-        className="sr-only peer"
-      />
+      <input type="radio" id={id} {...props} className="sr-only peer" />
       <label
         htmlFor={id}
         className={`
