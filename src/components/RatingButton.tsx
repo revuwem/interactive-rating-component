@@ -12,9 +12,34 @@ const RatingButton: React.FC<IRatingButtonProps> = ({
   ...props
 }) => {
   return (
-    <div>
-      <input type="radio" id={id} key={key} {...props} />
-      <label htmlFor={id}>{label}</label>
+    <div className="w-12 flex">
+      <input
+        type="radio"
+        id={id}
+        key={key}
+        {...props}
+        className="sr-only peer"
+      />
+      <label
+        htmlFor={id}
+        className={`
+        font-sans
+        font-bold
+        text-center
+        text-grey-200
+        w-full
+        p-3
+        rounded-full
+        bg-blue-400
+        transition
+        hover:cursor-pointer
+        hover:bg-grey-100
+        hover:text-white
+        peer-checked:bg-primary
+        peer-checked:text-white`}
+      >
+        {label}
+      </label>
     </div>
   );
 };

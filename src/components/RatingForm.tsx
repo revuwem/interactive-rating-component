@@ -33,18 +33,20 @@ const RatingForm: React.FC<IRatingFormProps> = ({
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </Paragraph>
-        <fieldset>
+        <fieldset className="mb-8">
           <legend className="sr-only">Select your rate</legend>
-          {ratingOptions.map(({ id, value, name }) => (
-            <RatingButton
-              id={id}
-              key={id}
-              label={value}
-              value={value}
-              name={name}
-              onChange={onRatingChanged}
-            />
-          ))}
+          <div className="flex justify-between">
+            {ratingOptions.map(({ id, value, name }) => (
+              <RatingButton
+                id={id}
+                key={id}
+                label={value}
+                value={value}
+                name={name}
+                onChange={onRatingChanged}
+              />
+            ))}
+          </div>
         </fieldset>
         <Button onClick={onSubmit}>Submit</Button>
       </form>
