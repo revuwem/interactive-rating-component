@@ -15,6 +15,11 @@ const RatingForm: React.FC<IRatingFormProps> = ({
   onRatingChanged,
   onSubmit,
 }) => {
+  const onFormSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    onSubmit();
+  };
+
   return (
     <BoxWrapper>
       <div className="w-full flex mb-6">
@@ -48,7 +53,7 @@ const RatingForm: React.FC<IRatingFormProps> = ({
             ))}
           </div>
         </fieldset>
-        <Button onClick={onSubmit}>Submit</Button>
+        <Button onClick={onFormSubmit}>Submit</Button>
       </form>
     </BoxWrapper>
   );
